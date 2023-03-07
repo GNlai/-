@@ -1,28 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <!--    路由输出标签-->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import "@/assets/css/Main_index.less";
+import { mapActions } from "vuex";
 
 export default {
   name: "App",
-  components: {
-    HelloWorld,
+  mounted() {
+    this.get_Userinfo();
   },
+  methods: {
+    ...mapActions("Store_User", { get_Userinfo: "get_Userinfo" })
+  },
+  components: {}
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="less">
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.option {
+  color: red;
 }
 </style>

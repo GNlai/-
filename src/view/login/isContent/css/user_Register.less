@@ -1,0 +1,59 @@
+.yes_id {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.24rem /* 18/64 */;
+  width: 100%;
+
+  .word,
+  .password {
+    display: block;
+    margin: 0.16rem /* 10/64 */ 0;
+    outline: none;
+    border: 1px solid #e2e2e2;
+    width: 80%;
+    height: 0.51rem /* 20/64 */;
+    border-radius: 0.16rem /* 10/64 */;
+    padding-left: 0.16rem /* 10/64 */;
+    box-sizing: border-box;
+  }
+
+  //   忘记密码
+  .isForget {
+    position: absolute;
+    top: 2.73rem /* 93/64 */;
+    right: 0.91rem /* 58/64 */;
+    color: #cccc33;
+    cursor: pointer;
+  }
+
+  .islogin {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 88%;
+    margin-top: 0.47rem /* 30/64 */;
+
+    .login_Left,
+    .login_Right {
+      width: 40%;
+      height: 0.63rem /* 40/64 */;
+      background-color: #f6f6f6;
+      outline: none;
+      border: 1px solid #f2f2f2;
+      cursor: pointer;
+      border-radius: 0.16rem /* 10/64 */;
+    }
+
+    .login_Right {
+      background-color: #fce13d;
+      margin-left: 0.16rem /* 10/64 */;
+    }
+  }
+
+  .icoWriting {
+    color: #cccc33;
+    font-size: 0.25rem /* 16/64 */;
+  }
+}

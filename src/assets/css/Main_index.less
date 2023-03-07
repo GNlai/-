@@ -1,0 +1,108 @@
+.mainS {
+  height: 5.4rem /* 380/64 */;
+  border-radius: 0.16rem /* 10/64 */ !important;
+}
+
+.main {
+  width: 4.69rem /* 300/64 */;
+  height: 3.13rem /* 200/64 */;
+  transform: scale(1.2, 1.2);
+  // background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  .username,
+  .point,
+  .userInfo,
+  .div_hr,
+  .user_Vip,
+  .informant_center,
+  .removeLogin {
+    height: 0.47rem /* 30/64 */;
+    line-height: 0.47rem /* 30/64 */;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    .ico {
+      font-size: 0.25rem /* 16/64 */;
+      font-weight: 500;
+      margin-right: 0.16rem /* 10/64 */;
+    }
+
+    .icos {
+      margin-left: 0.31rem /* 20/64 */;
+    }
+  }
+
+  // 用户名
+  .username {
+    font-size: 0.31rem /* 20/64 */;
+    text-align: center;
+    font-weight: 600;
+    color: #333333;
+    margin-top: 0.16rem /* 10/64 */;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+      color: #ffcc00;
+    }
+  }
+
+  // 积分
+  .point {
+    font-size: 0.22rem /* 14/64 */;
+    transform: scale(0.7, 0.7);
+  }
+
+  // 用户信息
+  .userInfo {
+    margin-top: 0.31rem /* 20/64 */;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+      color: #32ca99;
+    }
+  }
+
+  // 会员中心
+  .user_Vip {
+    margin-top: 0.25rem /* 16/64 */;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+      color: #32ca99;
+    }
+  }
+
+  // 举报中心
+  .informant_center {
+    margin-top: 0.31rem /* 20/64 */;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+      color: #32ca99;
+    }
+  }
+
+  // 分割线
+  .div_hr {
+    margin-top: 0.31rem /* 20/64 */;
+    border-bottom: 2px solid #e2e2e2;
+  }
+
+  // 退出登陆
+  .removeLogin {
+    margin-top: 0.31rem /* 20/64 */;
+
+    &:hover {
+      transform: scale(1.2, 1.2);
+      color: #cc3333;
+    }
+  }
+}

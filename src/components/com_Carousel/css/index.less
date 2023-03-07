@@ -1,0 +1,55 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  margin-top: 0.31rem /* 20/64 */;
+  height: 8.59rem /* 550/64 */;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    height: 100%;
+    width: 25%;
+    background-color: #e2e2e2;
+    border-right: 0.28rem /* 20/64 */ solid #e2e2e2;
+    border-top: 0.28rem /* 20/64 */ solid #e2e2e2;
+    border-bottom: 0.28rem /* 20/64 */ solid #e2e2e2;
+    z-index: 2;
+    box-sizing: border-box;
+    opacity: 0.5;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    content: "";
+    height: 100%;
+    width: 25%;
+    background-color: #e2e2e2;
+    border-left: 0.28rem /* 20/64 */ solid #e2e2e2;
+    border-top: 0.28rem /* 20/64 */ solid #e2e2e2;
+    border-bottom: 0.28rem /* 20/64 */ solid #e2e2e2;
+    z-index: 99;
+    box-sizing: border-box;
+    opacity: 0.5;
+  }
+
+  a {
+    .el-image {
+      height: 100%;
+      width: 100%;
+      border-radius: 0.16rem /* 10/64 */;
+    }
+
+    .book {
+      width: 100%;
+      height: 0.31rem /* 20/64 */;
+      background-color: #ffffcc;
+      z-index: 919191;
+    }
+  }
+}
